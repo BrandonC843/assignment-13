@@ -1,28 +1,12 @@
-// Ex-05 reverseObject()
-
-// Write a function called reverseObject(). It should take as input an object,
+// Ex-05 reverseObject()// Write a function called reverseObject(). It should take as input an object,
 // and it should output a new object where the keys and values are reversed.
 
-
-var reverseObject = function(inputObject){
-	var temporaryArray = []''
-	var newObject = [];
-	for (var key in inputObject[0]){
-		temporaryArray.push(key);
-	}
-	for(var i = temporaryArray.length-1; >=0; i--){
-		NewObject[temporaryArray[i]] = [];
-	}
-	return newObject
-// for(var i = 0; i < inputObject.length; i++)
-// 	for(object.key[i] in inputObject)
-// 		inputObject.push(newObject)
-// }
-//
-
-
-
-
+var reverseObject = function(inputObj){
+	var newObj = {};
+	for (var key in inputObj){
+		newObj[inputObj[key]] = key;
+	}return newObj;
+}
 
 
 

@@ -16,7 +16,7 @@ var getCapitalLetters = function(someString){
          }
       }
    }
-   console.log(numberOfCaps)
+   // console.log(numberOfCaps)
    return numberOfCaps
 }
 

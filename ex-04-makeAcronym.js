@@ -13,7 +13,7 @@ var makeAcronym = function(string){
    for (var i = 0; i < array.length; i++){
          firstLetter += array[i][0].toUpperCase()
    }
-   console.log(firstLetter)
+   // console.log(firstLetter)
    return firstLetter
 }
 

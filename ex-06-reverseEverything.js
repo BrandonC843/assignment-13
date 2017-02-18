@@ -1,9 +1,22 @@
-// Ex-06 : reverseEverything()
 
-// Write a function called reverseEverything(). It should take as input an array of
-// objects, and it should output an array of objects with all of the keys and values
-// reversed. It should also reverse the order of the array.
 
+
+// // Write a function called reverseEverything(). It should take as input an array of
+// // objects, and it should output an array of objects with all of the keys and values
+// // reversed. It should also reverse the order of the array.
+var reverseEverything = function(arrayOfObj){
+   var newArray = [];
+
+   for(var i = arrayOfObj.length - 1; i >= 0; i--){
+    	var newObj = reverseObject(arrayOfObj[i])
+		newArray.push(newObj)
+   }
+		return newArray
+}
+
+
+
+// ****output: arrary of objects
 // var someList = [
 //  { name: 'bae', okay: 'cool', pastTime: 'counting' },
 //  { name: 'whoa', what: 'sureman', pastTime: 'eating'}
@@ -17,15 +30,6 @@
 // ]
 
 // Hint, you may want to use reverseObject() as a helper function.
-
-
-
-
-
-
-
-
-
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 var usersList = [
    { willis: 'president@gmail.com',hobby: 'basketball' , favoriteFood: "pate" },

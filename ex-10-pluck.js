@@ -6,8 +6,17 @@
 // e.g:
 // pluck(stooges, 'name') should yield the array, ['moe','larry','curly']
 
-
-
+var pluck = function(listOfObjects, objectsPropertyName){
+   newArray = [];
+   for (i = 0; i < listOfObjects.length; i++){
+// console.log(listOfObjects)
+   var individualObject = listOfObjects[i];
+   newArray.push(individualObject[objectsPropertyName]);
+   // console.log(newArray)
+}
+return newArray
+// console.log(newArray)
+}
 
 
 
