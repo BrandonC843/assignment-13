@@ -17,40 +17,26 @@
  *              }
 // **/
 
-
-
-
-
-
-var showStats = function(inputNumb, inputArr){
-   var newObj = {
-      count_inputGreaterThan 0,
-      count_inputLessThan 0,
+// INPUT: (someNumber, and someArray)
+var showStats = function(someNumber, numberArray){
+   let returnObject = {
       count_inputEqualTo: 0,
+      count_inputGreaterThan: 0,
+      count_inputLessThan: 0,
       setSize: 0
    }
-   var countGreater = 1
-   var countLess = 1
-   var countEqual = 1
-
-   for var( i=0; i < inputArr.length; i++){
-
-      if (inputNumb > inputArr[i]){
-     newObj.count_inputGreaterThan = countGreater++
-  } else if (inputNumb < inputArr[i]){
-     newObj.count_inputLessThan = countLess ++
-   } else if (inputNumb === inputArr[i]){
-     newObj.count_inputEqualTo = countEqual ++
-  } newObj.setSize=inputArray.length;
-
-  return newObj;
-
+   for(var i = 0; i < numberArray.length; i++){
+      if (someNumber === numberArray[i]){
+         returnObject.count_inputEqualTo = returnObject.count_inputEqualTo + 1
+      }if(someNumber > numberArray[i]){
+         returnObject.count_inputGreaterThan = returnObject.count_inputGreaterThan + 1
+      }if(someNumber < numberArray[i]){
+         returnObject.count_inputLessThan = returnObject.count_inputLessThan + 1
+      }returnObject.setSize = numberArray.length
+}return returnObject
 }
 
-
-
-
-
+// RETURN: returnObject with 4 Properties
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
 var parkingTicketsCount = [33, 44, 22, 21, 92, 63, 12, 42, 56, 11, 99,
